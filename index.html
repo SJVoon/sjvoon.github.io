@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <h1 style="text-align: center">Simple Rupiah -> Ringgit Calculator</h1>
+    <h1 style="text-align: center"> Rupiah</h1>
+    <input style="margin-left:580px;" type="text" id="input1" />
+    <button onclick="myJsFunction()"> Change</button>
+    <script type="text/javascript">
+        function myJsFunction() {
+            var num = document.getElementById('input1').value;
+            document.getElementById("output").innerHTML = change(num);
+        }
+        function change(rp) {
+            return (rp * 0.0003082).toFixed(2);
+        }
+    </script>
+    <h1 style="text-align: center">RM
+        <h1 style="text-align: center" id='output'></h1>
+    </h1>
+
 </body>
+
 </html>
